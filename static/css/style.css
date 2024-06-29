@@ -1,0 +1,20 @@
+.stock-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.stock-list li {
+    padding: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+}
+
+.stock-list li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.stock-list li:hover {
+    background-color: #e9e9e9;
+}

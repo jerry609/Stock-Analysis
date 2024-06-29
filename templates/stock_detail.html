@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+{% block title %}Stock Detail{% endblock %}
+
+{% block content %}
+    <h2>Stock: {{ stock.name }} ({{ stock.stock_code }})</h2>
+    <p>Current Price: ${{ stock.current_price }}</p>
+    <!-- Add more stock details and graphs here -->
+    <form action="{{ url_for('buy_stock', stock_code=stock.stock_code) }}" method="post">
+        <button type="submit">Buy</button>
+    </form>
+    <form action="{{ url_for('sell_stock', stock_code=stock.stock_code) }}" method="post">
+        <button type="submit">Sell</button>
+    </form>
+{% endblock %}
